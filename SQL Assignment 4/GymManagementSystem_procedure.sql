@@ -1,0 +1,17 @@
+USE GymManagementSystem;
+
+-- I AM UPDATING THE MOBILE NUMBERS TO +44 AS SOME PEOPLE MAY HAVE INTERNATIONAL NUMBERS
+-- AND USING THIS TO MAKE IT EASIER TO NOTICE IF THE NUMBER IS INTERNATIONAL OR NOT
+DELIMITER //
+
+CREATE PROCEDURE UpdatePhoneNumbers() -- THIS IS MY PROCEDURE NAME
+BEGIN
+    UPDATE Members SET phone_number = CONCAT('+44', SUBSTRING(phone_number, 2)) WHERE phone_number LIKE '0%';
+END //
+
+DELIMITER ;
+
+CALL UpdatePhoneNumbers();
+
+select phone_number from Members;
+
