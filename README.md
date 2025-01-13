@@ -83,19 +83,19 @@ This project also demonstrates how to handle data efficiently using SQL queries 
 ## Queries and Procedures
 ### Key Queries
 * **Calculate Visit Frequency**:
-- Determines how often each member visits the gym.
+ Determines how often each member visits the gym.
   
 * **Identify Inactive Members**:
-- Finds members who visited less than two times in the last two weeks.
+ Finds members who visited less than two times in the last two weeks.
   
 * **Delete Inactive Members**:
-- Removes infrequent visitors to manage overcrowding.
+ Removes infrequent visitors to manage overcrowding.
   
 * **Revenue Calculation**:
-- Sums up membership fees to compute gym revenue.
+ Sums up membership fees to compute gym revenue.
   
 * **Most Active Members**:
-- Identifies the top visitors and upgrades their memberships.
+ Identifies the top visitors and upgrades their memberships.
   
 ### Stored Procedures
 * UpdatePhoneNumbers:
